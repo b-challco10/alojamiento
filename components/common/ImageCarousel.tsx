@@ -12,8 +12,8 @@ export default function ImageCarousel({ images }: Props) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
   return (
-    <div className="relative">
-      <div className="overflow-hidden rounded-t-3xl lg:rounded-l-3xl lg:rounded-tr-none" ref={emblaRef}>
+    <div className="relative overflow-hidden rounded-t-2xl lg:rounded-l-2xl lg:rounded-tr-none">
+      <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex">
           {images.map((image, index) => (
             <div key={index} className="relative min-w-full h-[350px] lg:h-[600px]">

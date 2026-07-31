@@ -9,21 +9,21 @@ export default function HeroCarousel() {
 
   const [current, setCurrent] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % heroImages.length);
-    }, 5000);
+useEffect(() => {
+  const timeout = setTimeout(() => {
+    nextSlide();
+  }, 5000);
 
-    return () => clearInterval(interval);
-  }, []);
+  return () => clearTimeout(timeout);
+}, [current]);
 
-  const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % heroImages.length);
-  };
+const nextSlide = () => {
+  setCurrent((prev) => (prev + 1) % heroImages.length);
+};
 
-  const prevSlide = () => {
-    setCurrent((prev) => (prev - 1 + heroImages.length) % heroImages.length);
-  };
+const prevSlide = () => {
+  setCurrent((prev) => (prev - 1 + heroImages.length) % heroImages.length);
+};
 
   return (
     <div className="absolute inset-0">

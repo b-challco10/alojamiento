@@ -34,7 +34,7 @@ export default function About() {
         <div className="mt-16 grid items-center gap-14 lg:grid-cols-2">
           <div className="relative h-[420px] overflow-hidden rounded-3xl shadow-xl">
             <Image
-              src="/about/alojamiento.jpg"
+              src="/hotel/hero2.png"
               alt="Alojamiento Flor de Coca"
               fill
               className="object-cover"
