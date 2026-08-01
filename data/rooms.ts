@@ -4,7 +4,7 @@ export const rooms: Room[] = [
   {
     id: 1,
     name: "Habitación Simple",
-    price: 80,
+    price: 60,
     image: "/rooms/simple/s1.jpeg",
     gallery: ["/rooms/simple/s1.jpeg","/rooms/simple/s2.jpeg", "/rooms/simple/s3.jpeg"],
     description: "Habitación cómoda ideal para una persona.",
@@ -15,13 +15,27 @@ export const rooms: Room[] = [
     wifi: true,
     hotWater: true
   },
+    {
+    id: 6,
+    name: "Habitación Triple",
+    price: 120,
+    image: "/rooms/triple/tr1.jpeg",
+    gallery: ["/rooms/triple/tr1.jpeg","/rooms/triple/tr2.jpeg","/rooms/triple/tr3.jpeg","/rooms/triple/tr4.jpeg","/rooms/triple/tr5.png"],
+    description: "Ideal para familias.",
+    beds: ["1 cama matrimonial", "2 camas individuales"],
+    capacity: 6,
+    bathroom: true,
+    androidTv: true,
+    wifi: true,
+    hotWater: true
+  },
   {
     id: 2,
     name: "Habitación Matrimonial",
-    price: 120,
+    price: 90,
     image: "/rooms/matrimonial/m1.jpeg",
     gallery: ["/rooms/matrimonial/m1.jpeg","/rooms/matrimonial/m2.jpeg", "/rooms/matrimonial/m3.jpeg","/rooms/matrimonial/m4.jpeg"],
-    description: "Perfecta para parejas.",
+    description: "Perfecta para parejas, con Android TV",
     beds: ["1 cama matrimonial"],
     capacity: 2,
     bathroom: false,
@@ -32,7 +46,7 @@ export const rooms: Room[] = [
   {
     id: 3,
     name: "Habitación Individual",
-    price: 130,
+    price: 80,
     image: "/rooms/individual/i1.jpeg",
     gallery: ["/rooms/individual/i1.jpeg","/rooms/individual/i2.jpeg","/rooms/individual/i3.jpeg","/rooms/individual/i4.jpeg","/rooms/individual/i5.jpeg"],
     description: "Habitación individual con baño privado y Android TV.",
@@ -43,10 +57,24 @@ export const rooms: Room[] = [
     wifi: true,
     hotWater: true
   },
+    {
+    id: 8,
+    name: "Habitación Matrimonial Premium",
+    price: 100,
+    image: "/rooms/matrimonial/mat-priv/p7.jpeg",
+    gallery: ["/rooms/matrimonial/mat-priv/p7.jpeg","/rooms/matrimonial/mat-priv/p1.jpeg","/rooms/matrimonial/mat-priv/p2.jpeg","/rooms/matrimonial/mat-priv/p3.jpeg","/rooms/matrimonial/mat-priv/p4.jpeg","/rooms/matrimonial/mat-priv/p5.jpeg","/rooms/matrimonial/mat-priv/p6.jpeg"],
+    description: "Habitación matrimonial con Android TV y baño privado.",
+    beds: ["1 cama matrimonial"],
+    capacity: 2,
+    bathroom: true,
+    androidTv: true,
+    wifi: true,
+    hotWater: true
+  },
   {
     id: 4,
     name: "Habitación Matrimonial",
-    price: 160,
+    price: 90,
     image: "/rooms/matrimonial/mat-tv/a1.jpeg",
     gallery: ["/rooms/matrimonial/mat-tv/a1.jpeg","/rooms/matrimonial/mat-tv/a2.jpeg","/rooms/matrimonial/mat-tv/a3.jpeg","/rooms/matrimonial/mat-tv/a4.jpeg"],
     description: "Habitación matrimonial amplia y cómoda, equipada con Android TV.",
@@ -71,24 +99,11 @@ export const rooms: Room[] = [
   //   wifi: true,
   //   hotWater: true
   // },
-  {
-    id: 6,
-    name: "Habitación Triple",
-    price: 220,
-    image: "/rooms/triple/tr1.jpeg",
-    gallery: ["/rooms/triple/tr1.jpeg","/rooms/triple/tr2.jpeg","/rooms/triple/tr3.jpeg","/rooms/triple/tr4.jpeg","/rooms/triple/tr5.png"],
-    description: "Ideal para familias.",
-    beds: ["1 cama matrimonial", "2 camas individuales"],
-    capacity: 6,
-    bathroom: true,
-    androidTv: true,
-    wifi: true,
-    hotWater: true
-  },
+
   {
     id: 7,
     name: "Habitación Matrimonial",
-    price: 140,
+    price: 80,
     image: "/rooms/matrimonial/mat-tv/t1.jpeg",
     gallery: ["/rooms/matrimonial/mat-tv/t1.jpeg","/rooms/matrimonial/mat-tv/t2.jpeg","/rooms/matrimonial/mat-tv/t3.jpeg","/rooms/matrimonial/mat-tv/t4.jpeg"],
     description: "Habitación matrimonial con Android TV.",
@@ -98,19 +113,6 @@ export const rooms: Room[] = [
     androidTv: true,
     wifi: true,
     hotWater: true
-  },
-  {
-    id: 8,
-    name: "Habitación Matrimonial Premium",
-    price: 180,
-    image: "/rooms/matrimonial/mat-priv/p7.jpeg",
-    gallery: ["/rooms/matrimonial/mat-priv/p7.jpeg","/rooms/matrimonial/mat-priv/p1.jpeg","/rooms/matrimonial/mat-priv/p2.jpeg","/rooms/matrimonial/mat-priv/p3.jpeg","/rooms/matrimonial/mat-priv/p4.jpeg","/rooms/matrimonial/mat-priv/p5.jpeg","/rooms/matrimonial/mat-priv/p6.jpeg"],
-    description: "Habitación matrimonial con Android TV y baño privado.",
-    beds: ["1 cama matrimonial"],
-    capacity: 2,
-    bathroom: true,
-    androidTv: true,
-    wifi: true,
-    hotWater: true
   }
+
 ];
